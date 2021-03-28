@@ -1,0 +1,19 @@
+<!--include header-->
+<%- include('include/_header')%>
+
+  <% for(var i=0; i < users.length; i++) { %>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>
+            <a href="" target="_target" onclick="">
+              <%= users[i].heading %>
+            </a>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <% } %>
+
+      <!--include footer-->
+      <%- include('include/_footer')%>
